@@ -143,28 +143,27 @@ body {
 <br>
 <br>
 <br>
-    <!-- Información adicional antes del pie de página -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="titulo9">Filtrar Logros por Mes</h3>
-                <br>
-                <button onclick="filtrarPorMes(0)">Mostrar Todas</button>
-                <button onclick="filtrarPorMes(1)">Enero</button>
-                <button onclick="filtrarPorMes(2)">Febrero</button>
-                <button onclick="filtrarPorMes(3)">Marzo</button>
-                <button onclick="filtrarPorMes(4)">Abril</button>
-                <button onclick="filtrarPorMes(5)">Mayo</button>
-                <button onclick="filtrarPorMes(6)">Junio</button>
-                <button onclick="filtrarPorMes(7)">Julio</button>
-                <button onclick="filtrarPorMes(8)">Agosto</button>
-                <button onclick="filtrarPorMes(9)">Setiembre</button>
-                <button onclick="filtrarPorMes(10)">Octubre</button>
-                <button onclick="filtrarPorMes(11)">Noviembre</button>
-                <button onclick="filtrarPorMes(12)">Diciembre</button>
-            </div>
-        </div>
+
+<!-- Botones para filtrar combos vacacionales por año -->
+<h3 class="titulo9">Filtrar Combos Vacacionales por Año</h3>
+<br>
+<button onclick="filtrarCombosPorAnio(2023)">2023</button>
+<button onclick="filtrarCombosPorAnio(2023)">2024</button>
+<button onclick="filtrarCombosPorAnio(2022)">2025</button>
+<!-- Agrega botones para los demás años -->
+
+<!-- Botones para mostrar meses disponibles -->
+<h3 class="titulo9">Meses Disponibles para el Año</h3>
+<div id="mesesDisponibles">
+    <!-- Aquí se mostrarán los botones de los meses disponibles -->
+</div>
+<!-- Contenedor para mostrar combos vacacionales -->
+<div class="container mt-4">
+    <div class="row" id="combos">
+        <!-- Aquí se mostrarán los combos filtrados -->
     </div>
+</div>
+
 
 
     <div class="container mt-4">
@@ -177,59 +176,344 @@ body {
         window.onload = function () {
             filtrarPorMes(0); // Muestra todas las publicaciones al cargar la página
         }
-        // Supongamos que tienes un array de objetos con las publicaciones y cada objeto tiene una propiedad "fecha".
-        const publicaciones = [
-        { 
+// Arreglo de combos vacacionales con información que incluye el año y el mes en el que están disponibles
+const combosVacacionales = [
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 2",
+        año: 2023,
+        mes: 3, // Marzo
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 3",
+        año: 2022,
+        mes: 5, // Mayo
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
+    {
+        nombre: "Combo 1",
+        año: 2023,
+        mes: 1, // Enero
+        // Otros detalles del combo
+    },
     
-            titulo: "El Centro Imperio Inca: Huánuco Pampa.",
-            fecha: "2023-09-27-2023-10-30",
-            texto: "Más de 3 díasTous en autobús desde <BR> S/ 499.64  por adulto",
-            imagen: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/75/4e/c4/caption.jpg?w=500&h=400&s=1"
-        },
-        
-        ];
+];
 
-       // Función para mostrar las publicaciones según el mes seleccionado
-    function filtrarPorMes(mes) {
-        let publicacionesFiltradas;
+// Función para filtrar y mostrar combos vacacionales por año
+function filtrarCombosPorAnio(anio) {
+    const combosFiltradosPorAnio = combosVacacionales.filter(combo => combo.año === anio);
+    mostrarCombos(combosFiltradosPorAnio);
 
-        if (mes === 0) {
-            // Mostrar todas las publicaciones
-            publicacionesFiltradas = publicaciones;
-        } else {
-            // Filtrar por mes
-            publicacionesFiltradas = publicaciones.filter(publicacion => {
-                const fecha = new Date(publicacion.fecha);
-                return fecha.getMonth() + 1 === mes; // +1 porque getMonth() devuelve valores de 0 a 11
-            });
+    // Obtener meses únicos disponibles para el año seleccionado
+    const mesesDisponibles = obtenerMesesDisponibles(anio);
+    mostrarMesesDisponibles(mesesDisponibles);
+}
+
+// Función para obtener meses únicos disponibles para un año específico
+function obtenerMesesDisponibles(anio) {
+    const mesesDisponibles = new Set();
+    combosVacacionales.forEach(combo => {
+        if (combo.año === anio) {
+            mesesDisponibles.add(combo.mes);
         }
+    });
+    return Array.from(mesesDisponibles);
+}
 
-        // Mostrar las publicaciones filtradas en el contenedor
-        const publicacionesContainer = document.getElementById("publicaciones");
-        publicacionesContainer.innerHTML = ""; // Limpiar el contenedor
+// Función para mostrar los meses disponibles en el contenedor correspondiente
+function mostrarMesesDisponibles(meses) {
+    const mesesDisponiblesContainer = document.getElementById("mesesDisponibles");
+    mesesDisponiblesContainer.innerHTML = ""; // Limpiar el contenedor
 
-publicacionesFiltradas.forEach(publicacion => {
-    const publicacionElement = document.createElement("div");
-    publicacionElement.classList.add("col-md-4");
+    meses.forEach(mes => {
+        const botonMes = document.createElement("button");
+        botonMes.textContent = nombreMes(mes);
+        botonMes.onclick = () => filtrarCombosPorMes(mes);
+        mesesDisponiblesContainer.appendChild(botonMes);
+    });
+}
 
-    // Agrega la clase para el color azul
-    publicacionElement.classList.add("card-azul");
+// Función para filtrar y mostrar combos vacacionales por mes
+function filtrarCombosPorMes(mes) {
+    const combosFiltradosPorMes = combosVacacionales.filter(combo => combo.mes === mes);
+    mostrarCombos(combosFiltradosPorMes);
+}
 
-    publicacionElement.innerHTML = `
-    <div class="card mb-4 card-azul">
-            <img src="${publicacion.imagen}" class="card-img-top" alt="${publicacion.titulo}">
-            <div class="card-body">
-                <h5 class="card-title">${publicacion.titulo}</h5>
-                <p class="card-text">${publicacion.texto}</p>
-                <p class="card-text">Fecha de vigencia: ${publicacion.fecha}</p>
+// Función para mostrar los combos vacacionales en el contenedor correspondiente
+function mostrarCombos(combos) {
+    const combosContainer = document.getElementById("combos");
+    combosContainer.innerHTML = ""; // Limpiar el contenedor
+
+    combos.forEach(combo => {
+        const comboElement = document.createElement("div");
+        comboElement.classList.add("col-md-4");
+
+        // Agrega la clase para el diseño deseado
+        comboElement.classList.add("card-azul");
+
+        comboElement.innerHTML = `
+            <div class="card mb-4 card-azul">
+                <div class="card-body">
+                    <h5 class="card-title">${combo.nombre}</h5>
+                    <p class="card-text">Año: ${combo.año}</p>
+                    <p class="card-text">Mes: ${nombreMes(combo.mes)}</p>
+                    <!-- Agrega otros detalles del combo aquí -->
+                </div>
             </div>
-        </div>
-    `;
-    publicacionesContainer.appendChild(publicacionElement);
-});
+        `;
+        combosContainer.appendChild(comboElement);
+    });
+}
 
-        
-    }
+// Función para obtener el nombre del mes según el número (1 para enero, 2 para febrero, etc.)
+function nombreMes(numeroMes) {
+    const meses = [
+        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+        "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"
+    ];
+    return meses[numeroMes - 1];
+}
+
+// Mostrar todos los combos vacacionales al cargar la página
+window.onload = function () {
+    mostrarCombos(combosVacacionales);
+}
+  
+    
 </script>
 </body>
 </html>
