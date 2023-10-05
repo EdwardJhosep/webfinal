@@ -1,0 +1,224 @@
+/* Cambia el color de fondo del menú a blanco */
+.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    background-color: #e9e8e8 !important; /* Blanco, cambia el color a tu preferencia */
+}
+
+/* Cambia el color del texto del menú a negro */
+.navbar-nav .nav-link {
+    color: #000000 !important; /* Negro, cambia el color a tu preferencia */
+}
+
+
+/* Estilos para el botón de WhatsApp flotante */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Verde brillante, cambia el color a tu preferencia */
+    color: #fff; /* Texto en blanco para mayor contraste */
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e; /* Verde más oscuro al pasar el ratón por encima */
+}
+
+/* Cambia el color del texto del botón a blanco */
+.whatsapp-button a {
+    color: #fff;
+    vertical-align: middle;
+}
+
+/* Estilos para los íconos de redes sociales en la barra de navegación */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.navbar-icon {
+    color: #1c5de9; /* Cambia el color de los íconos si es necesario */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-icon:hover {
+    color: #3498db; /* Cambia el color al pasar el mouse por encima del ícono */
+}
+
+/* Estilos para el logo */
+.logo {
+    max-width: 70px; /* Ajusta el ancho máximo según tus necesidades */
+    /* Otros estilos personalizados para el logo */
+}
+/* Estilos para los elementos del submenú */
+.dropdown-item {
+    color: #000000 !important; /* Color de texto negro */
+    background-color: #ffffff !important; /* Fondo blanco */
+}
+
+/* Estilos para los elementos del submenú al pasar el ratón por encima */
+.dropdown-item:hover {
+    color: #ffffff !important; /* Texto blanco */
+    background-color: #3ba6ec !important; /* Fondo negro */
+}
+/* Estilo para el texto en movimiento */
+.moving-text {
+    animation: moveText 3s linear infinite;
+    /* Otros estilos, como color, fuente, tamaño, etc., pueden ir aquí */
+}.navbar-nav li.nav-item {
+    list-style-type: none; /* Anula el estilo de viñeta/punto */
+}
+#changingText {
+    color: rgb(0, 0, 0); /* Cambia "blue" al color que desees */
+
+        font-size: 18px;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        /* Puedes agregar más estilos de texto aquí según tus preferencias */
+    }
+        /* Fondo degradado azul */
+        .degradado-azul {
+            background: linear-gradient(to bottom, #007bff, #0056b3); /* Cambia los colores según tu preferencia */
+            padding: 20px; /* Espacio interno para el texto */
+            color: white; /* Color de texto blanco */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+            text-align: justify; /* Justificar texto */
+        }
+        /* Estilo para el fondo degradado azul del contenedor */
+        .contenido-container {
+            background: linear-gradient(to bottom, #007bff, #0056b3); /* Fondo degradado azul */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+            color: white; /* Texto en blanco */
+            transition: background-color 0.3s ease; /* Efecto de transición de color de fondo */
+        }
+
+        /* Efecto de cambio de color de fondo al pasar el cursor sobre el contenedor */
+        .contenido-container:hover {
+            background: linear-gradient(to bottom, #0056b3, #007bff); /* Cambia el color de fondo al pasar el cursor */
+        }
+
+        /* Estilo para el texto */
+        .texto {
+            transition: color 0.3s ease; /* Efecto de transición de color de texto */
+        }
+
+        /* Efecto de cambio de color de texto al pasar el cursor sobre el texto */
+        .contenido-container:hover .texto {
+            color: #ffcc00; /* Cambia el color del texto al pasar el cursor */
+        }
+
+        /* Estilo para la imagen circular */
+        .imagen-circular {
+            border-radius: 50%; /* Hace que la imagen sea circular */
+            max-width: 250px; /* Cambia el tamaño según tus preferencias */
+            transition: transform 0.3s ease; /* Efecto de transición al pasar el cursor */
+        }
+
+        /* Efecto de zoom al pasar el cursor sobre la imagen */
+        .imagen-circular:hover {
+            transform: scale(1.1); /* Aumenta la escala al 110% del tamaño original */
+        }
+        
+        /* Estilo para el contenedor de la fila */
+        .row-container {
+            display: flex; /* Para que los elementos internos se alineen en línea */
+            align-items: center; /* Para centrar verticalmente los elementos internos */
+        }
+        .blue-rectangle {
+            background-color: #007BFF; /* Color de fondo azul */
+            padding: 20px; /* Espacio interior */
+            color: #fff; /* Color del texto */
+            transition: background-color 0.3s, color 0.3s; /* Transición de color */
+        }
+    
+        .blue-rectangle:hover {
+            background-color: #0056b3; /* Nuevo color de fondo al pasar el mouse */
+            color: #fff; /* Nuevo color del texto al pasar el mouse */
+        }
+    
+        .blue-rectangle h3 {
+            color: #fff; /* Color de los títulos */
+        }
+/* Estilos para la clase "titulo3" */
+.titulo3 {
+    font-size: 28px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    position: relative; /* Posición relativa para efectos de movimiento */
+    text-transform: uppercase; /* Transformación a mayúsculas */
+    margin-bottom: 20px; /* Espacio inferior */
+  
+    /* Animación de desplazamiento */
+    animation: moveUp 1s ease-in-out infinite alternate; /* Efecto de desplazamiento alternante */
+  
+    /* Fondo degradado adaptado al tamaño del texto */
+    background-image: linear-gradient(45deg, #4a08ff, #04053b); /* Gradiente de colores */
+    -webkit-background-clip: text; /* Adapta el fondo al texto en navegadores webkit (Safari, Chrome) */
+    background-clip: text; /* Adapta el fondo al texto */
+    color: transparent; /* Hace el texto transparente para que se vea el fondo degradado */
+  }
+  /* Estilos para la clase "titulo3" */
+.titulo32 {
+    font-size: 28px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    position: relative; /* Posición relativa para efectos de movimiento */
+    text-transform: uppercase; /* Transformación a mayúsculas */
+    margin-bottom: 20px; /* Espacio inferior */
+  
+    /* Animación de desplazamiento */
+    animation: moveUp 1s ease-in-out infinite alternate; /* Efecto de desplazamiento alternante */
+  
+    /* Fondo degradado adaptado al tamaño del texto */
+    background-image: linear-gradient(45deg, #ff0000, #65660e); /* Gradiente de colores */
+    -webkit-background-clip: text; /* Adapta el fondo al texto en navegadores webkit (Safari, Chrome) */
+    background-clip: text; /* Adapta el fondo al texto */
+    color: transparent; /* Hace el texto transparente para que se vea el fondo degradado */
+  }
+  /* Estilos para la clase "titulo3" */
+.titulo33{
+    font-size: 28px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    position: relative; /* Posición relativa para efectos de movimiento */
+    text-transform: uppercase; /* Transformación a mayúsculas */
+    margin-bottom: 20px; /* Espacio inferior */
+  
+    /* Animación de desplazamiento */
+    animation: moveUp 1s ease-in-out infinite alternate; /* Efecto de desplazamiento alternante */
+  
+    /* Fondo degradado adaptado al tamaño del texto */
+    background-image: linear-gradient(45deg, #31881c, #032b1f); /* Gradiente de colores */
+    -webkit-background-clip: text; /* Adapta el fondo al texto en navegadores webkit (Safari, Chrome) */
+    background-clip: text; /* Adapta el fondo al texto */
+    color: transparent; /* Hace el texto transparente para que se vea el fondo degradado */
+  }
+  /* Efecto de desplazamiento hacia arriba */
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px); /* Desplazamiento hacia arriba */
+    }
+  }
+  
+
+
+
+
