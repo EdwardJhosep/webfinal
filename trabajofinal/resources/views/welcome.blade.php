@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}">
     <style>
+
+        body{
+            background-color: royalblue;
+        }
         /* Establece un ancho y alto fijo para todas las imágenes de combos */
         .card-img-top {
             width: 340px;
