@@ -12,57 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="estilo.css">  
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}">
     <style>     
-         /* Reset de estilos para eliminar los márgenes y rellenos predeterminados */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para el fondo del cuerpo de la página */
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilo para la barra de navegación */
-.navbar {
-    background-color: #333;
-}
-
-/* Estilo para el logotipo de la institución en la barra de navegación */
-.navbar-brand .logo {
-    max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
-}
-
-/* Estilo para el texto en movimiento */
-#changingText {
-    font-size: 24px;
-    color: #fff;
-}
-
-/* Estilo para los íconos de redes sociales en la barra de navegación */
-.navbar-icon {
-    color: #fff;
-    margin-right: 15px;
-}
-
-/* Estilo para los enlaces de navegación */
-.navbar-nav .nav-link {
-    color: #fff;
-}
-
-/* Estilo para los enlaces de navegación cuando están activos o al pasar el mouse sobre ellos */
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
-    color: #f8b400;
-}
-
-/* Estilo para el botón de hamburguesa en dispositivos móviles */
-.navbar-toggler-icon {
-    background-color: #fff;
-}
-
+      
   </style>
 </head>
 <body>

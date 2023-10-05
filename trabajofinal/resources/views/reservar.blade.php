@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOURIST</title>
-    <link rel="icon" href="img/logo.jpg.png" type="image/png">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/333/737/png-transparent-travel-tourism-in-norway-hotel-business-information-sai-gon-blue-logo-silhouette.png" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -12,57 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="estilo.css">  
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}">
     <style>     
-         /* Reset de estilos para eliminar los márgenes y rellenos predeterminados */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para el fondo del cuerpo de la página */
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilo para la barra de navegación */
-.navbar {
-    background-color: #333;
-}
-
-/* Estilo para el logotipo de la institución en la barra de navegación */
-.navbar-brand .logo {
-    max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
-}
-
-/* Estilo para el texto en movimiento */
-#changingText {
-    font-size: 24px;
-    color: #fff;
-}
-
-/* Estilo para los íconos de redes sociales en la barra de navegación */
-.navbar-icon {
-    color: #fff;
-    margin-right: 15px;
-}
-
-/* Estilo para los enlaces de navegación */
-.navbar-nav .nav-link {
-    color: #fff;
-}
-
-/* Estilo para los enlaces de navegación cuando están activos o al pasar el mouse sobre ellos */
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
-    color: #f8b400;
-}
-
-/* Estilo para el botón de hamburguesa en dispositivos móviles */
-.navbar-toggler-icon {
-    background-color: #fff;
-}
-
+     
   </style>
 </head>
 <body>
@@ -129,5 +81,12 @@ body {
             </a>
         </div>
     </nav>
+
+    
+    <div class="whatsapp-button">
+        <a href="https://wa.me/5121567261" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+    </div> 
 </body>
 </html>
