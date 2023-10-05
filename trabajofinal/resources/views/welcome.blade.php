@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Institución Educativa</title>
+    <title>TOURIST</title>
     <link rel="icon" href="img/logo.jpg.png" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -181,72 +181,12 @@ body {
         const publicaciones = [
         { 
     
-            titulo: "¡𝗖𝗟𝗔𝗦𝗜𝗙𝗜𝗖Ó 𝗔 𝗟𝗔 𝗘𝗧𝗔𝗣𝗔 𝗡𝗔𝗖𝗜𝗢𝗡𝗔𝗟 𝗗𝗘 ATLETISMO! 🏊🏆🥇",
-            fecha: "2023-09-27",
-            texto: "🥇MEDALLA DE ORO🥇 PARA HUÁNUCO  EN ATLETISMO🏊La Comunidad Educativa Isaac Newton felicita a la estudiante María Esmeralda  Solano Rojas, representante de la región Huánuco quien clasificó a la 𝗘𝗧𝗔𝗣𝗔 𝗡𝗔𝗖𝗜𝗢𝗡𝗔𝗟 𝗗𝗘 ATLETISMO,.",
-            imagen: "img/logros/setiembre/1.jpg"
+            titulo: "El Centro Imperio Inca: Huánuco Pampa.",
+            fecha: "2023-09-27-2023-10-30",
+            texto: "Más de 3 díasTous en autobús desde <BR> S/ 499.64  por adulto",
+            imagen: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/75/4e/c4/caption.jpg?w=500&h=400&s=1"
         },
-        { 
-            titulo: "𝗙𝗘𝗟𝗜𝗖𝗜𝗧𝗔𝗖𝗜𝗢𝗡𝗘𝗦 𝗔𝗯𝗶𝗴𝗮𝗶𝗹 𝗣𝗮𝗽𝗮 𝗚𝗮𝗿𝗮𝘆✨✨",
-            fecha: "2023-09-21",
-            texto: "Felicitaciones a nuestra estudiante newtoniana 𝗔𝗯𝗶𝗴𝗮𝗶𝗹 𝗣𝗮𝗽𝗮 𝗚𝗮𝗿𝗮𝘆 por haber ocupado el TERCER PUESTO🥉🥉 en la categoría “Adolescentes” del IX Concurso de Oratoria Perú -2023 Etapa Regional.✨✨👏✨✨¡Congratulaciones, 𝗔𝗯𝗶𝗴𝗮𝗶𝗹! Estamos muy orgullosos de ti por haber conquistado al público con la maravillosa voz que te determina..",
-            imagen: "img/logros/setiembre/2.jpg"
-        },
-        { 
-            titulo: "𝗙𝗘𝗟𝗜𝗖𝗜𝗧𝗔𝗖𝗜𝗢𝗡𝗘𝗦 𝗔𝗶𝘁𝗮𝗻𝗮 𝗚𝘂𝗮𝗱𝗮𝗹𝘂𝗽𝗲 𝗥𝗮𝗺𝗼𝘀 𝗣𝗮𝗻𝗱𝘂𝗿𝗼 ",
-            fecha: "2023-09-19",
-            texto: "Queremos Felicitar la destacada participación de nuestra estudiante newtoniana Aitana Guadalupe Ramos Panduro por haber ocupado el 🥇Primer Puesto🥇 en el I Concurso Nacional de Marinera -2023  Categoría Infante.✨🌟La constancia y disciplina logran grandes resultados. 🤩👏🏽.",
-            imagen: "img/logros/setiembre/3.jpg"
-        },
-
-        { 
-            titulo: "👏👏𝗙𝗘𝗟𝗜𝗖𝗜𝗧𝗔𝗖𝗜𝗢𝗡𝗘𝗦 𝗟𝗲𝗼𝗻𝗲𝗹𝗮 𝗥𝗼𝗱𝗿í𝗴𝘂𝗲𝘇 𝗭á𝗿𝗮𝘁𝗲🎊🎉🎉🔷",
-            fecha: "2023-09-19",
-            texto: "🎉🔷La I.E.P. Isaac Newton felicita a la estudiante 𝗟𝗲𝗼𝗻𝗲𝗹𝗮 𝗥𝗼𝗱𝗿í𝗴𝘂𝗲𝘇 𝗭á𝗿𝗮𝘁𝗲 6º grado de primaria por su participación al Concurso Regional de Pintura denominado Niños Con Valores del Bicentenario, Organizado por  Organización Familia Y Cultura .👏👏🎉🔷Cabe resaltar que, para este certamen de los 200 participantes.",
-            imagen: "img/logros/setiembre/4.jpg"
-        },
-
-        { 
-            titulo: "🎉𝗙𝗘𝗟𝗜𝗖𝗜𝗧𝗔𝗖𝗜𝗢𝗡𝗘𝗦 𝗔𝗺𝗶𝗿 𝗧𝗿𝘂𝗰𝗶𝗼𝘀 𝗩𝗮𝗿𝗴𝗮𝘀",
-            fecha: "2023-09-18",
-            texto: "🎉Con inmenso orgullo y alegría, queremos expresar nuestro profundo agradecimiento al estudiante Amir Trucios Vargas, por honrar una vez más a nuestro querido Institución Educativa Isaac Newton, por el obtener el Tercer Puesto IX Concurso De Oratoria Perú 2023 Etapa Regional🎉🌟 🎉Es un logró que llena nuestros corazones de emoción y nos impulsa a seguir adelante con pasión y dedicación ¡Vamos por más triunfo!🌟 🌟 .",
-            imagen: "img/logros/setiembre/5.jpg"
-        },
-
-        { 
-            titulo: "🎉 𝗙𝗘𝗟𝗜𝗖𝗜𝗧𝗔𝗖𝗜𝗢𝗡𝗘𝗦 𝗦𝗲𝗿𝗴𝗶𝗼 𝗔𝗻𝗱𝗿é 𝗔𝗹𝗹𝗽𝗮𝘀 𝗟ó𝗽𝗲𝘇 🥳👏",
-            fecha: "2023-09-18",
-            texto: "🎉 La I.E.P. Isaac Newton felicita al estudiante 𝗦𝗲𝗿𝗴𝗶𝗼 𝗔𝗻𝗱𝗿é 𝗔𝗹𝗹𝗽𝗮𝘀 𝗟ó𝗽𝗲𝘇,  por ocupar el Segundo Puesto🥈🥈en la categoría “Adolescentes” del IX Concurso De Oratoria Perú 2023 Etapa Regional.🌟🥳👏Eres único con tu gran talento que te caracteriza; gracias por poner el nombre de nuestra institución en alto ¡Muchas Felicidades 𝗦𝗲𝗿𝗴𝗶𝗼 ! ¡Vamos por más triunfo!🥈🥈",
-            imagen: "img/logros/setiembre/6.jpg"
-        },
-
-        { 
-            titulo: "FELECITACIONES 𝗙𝗿𝗮𝗻𝗰𝗲𝘀𝗰𝗮 𝗖𝘂𝗲𝗻𝗰𝗮 𝗟𝗲ó𝗻",
-            fecha: "2023-09-18",
-            texto: "✨🌟✅La I.E.P. Isaac Newton felicita a la estudiante 𝗙𝗿𝗮𝗻𝗰𝗲𝘀𝗰𝗮 𝗖𝘂𝗲𝗻𝗰𝗮 𝗟𝗲ó𝗻 a por ocupar el Primer Puesto en la categoría “Adolescentes” del IX Concurso De Oratoria Perú 2023 Etapa Regional.✨🌟✨🌟Estamos orgulloso del gran talento que tienes; gracias por poner siempre el nombre de nuestra institución en alto ¡Muchas Felicidades 𝗙𝗿𝗮𝗻𝗰𝗲𝘀𝗰𝗮! ¡Vamos por más triunfo!✨🌟",
-            imagen: "img/logros/setiembre/7.jpg"
-        },
-
-        { 
-            titulo: "FELECITACIONES 𝗙𝗮𝗯𝗶𝗮𝗻𝗼 𝗦𝗮𝗹𝗮𝘀 𝗔𝗿𝗮𝗻𝗱𝗮",
-            fecha: "2023-09-18",
-            texto: "✨🌟✅La I.E.P. Isaac Newton felicita al estudiante 𝗙𝗮𝗯𝗶𝗮𝗻𝗼 𝗦𝗮𝗹𝗮𝘀 𝗔𝗿𝗮𝗻𝗱𝗮 del sexto grado de primaria por ocupar el Primer Puesto en la categoría “Infantil” del IX Concurso De Oratoria Perú 2023 - Etapa Regional.✨🌟✨🌟Estamos orgulloso del gran talento que tienes y por poner siempre en nombre de nuestra institución en alto ¡Muchas Felicidades 𝗙𝗮𝗯𝗶𝗮𝗻𝗼! ¡Vamos por más triunfo!👏👏💪💪.",
-            imagen: "img/logros/setiembre/8.jpg"
-        },
-
-        { 
-            titulo: "Felicitamos a nuestros estudiantes del nivel  secundaria por ocupar  el primer  puesto en la XXXIII ",
-            fecha: "2023-09-16",
-            texto: "Feria Escolar Nacional de Ciencia y Tecnología, EUREKA - 2023, con el proyecto denominado Producción Capsular de Alimentos Vegetales y Electricidad Verde Bajo Proceso Autofotosínteticos Criticos con una puntuación extraordinario  de 288  en la etapa Ugel .",
-            imagen: "img/logros/setiembre/9.jpg"
-        },
-
-        {
-            titulo: "𝗖𝗔𝗠𝗣𝗘𝗢𝗡𝗔𝗦 𝗥𝗘𝗚𝗜𝗢𝗡𝗔𝗟 𝗘𝗡 𝗩Ó𝗟𝗘𝗬 🎉🏆🥇¡𝐔𝐧 𝐥𝐨𝐠𝐫𝐨 𝐪𝐮𝐞 𝐥𝐥𝐞𝐧𝐚 𝐝𝐞 𝐨𝐫𝐠𝐮𝐥𝐥𝐨 𝐚 𝐭𝐨𝐝𝐨𝐬!¡𝐔𝐧 𝐨𝐫𝐠𝐮𝐥𝐥𝐨 𝗡𝗘𝗪𝗧𝗢𝗡𝗜𝗔𝗡𝗢!",
-            fecha: "2023-09-17",
-            texto: "🎉🏆🥇ORGULLO NEWTONIANO| Nos hicieron vibrar de emoción en cada partido. Es por ello que la Institución Educativa Isaac Newton liderado por el director, Fisher Justiniano Chavez, la coordinadora pedagógica, Edith Bravo JARA, y David Paucar Salvador.",
-            imagen: "img/logros/setiembre/10.jpg"
-        },
+        
         ];
 
        // Función para mostrar las publicaciones según el mes seleccionado
@@ -281,7 +221,7 @@ publicacionesFiltradas.forEach(publicacion => {
             <div class="card-body">
                 <h5 class="card-title">${publicacion.titulo}</h5>
                 <p class="card-text">${publicacion.texto}</p>
-                <p class="card-text">Fecha de publicación: ${publicacion.fecha}</p>
+                <p class="card-text">Fecha de vigencia: ${publicacion.fecha}</p>
             </div>
         </div>
     `;
