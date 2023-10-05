@@ -69,6 +69,88 @@
 </div>
 
 <!-- Tu contenido aquí -->
+<div class="container-yv">
+                                        <div class="card border border-4">
+                                            <form id="signup-form">
+                                                <h2 class="card-title d-flex justify-content-center">Ingresa tus datos personales</h2>
+                                                
+                                                
+                                                    <!--<h3 class="card-title d-flex justify-content-center">Datos de contacto</h3>-->
+
+                                                <!----------------------------Aca empieza otro formato de formulario---------------------------------------->
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Nombres</span>
+                                                    <input type="text" aria-label="First name" class="form-control" style="height: auto;" placeholder="Primero">
+                                                    <input type="text" aria-label="Last name" class="form-control" style="height: auto;" placeholder="Segundo">
+                                                  </div>
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Apellidos</span>
+                                                    <input type="text" aria-label="First name" class="form-control" style="height: auto;">
+                                                  </div>
+
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Fecha de nacimiento</span>
+                                                    <input type="date" name="salida" aria-label="First name" class="form-control" style="height: auto;">
+                                                  </div>
+
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Sexo</span>
+                                                    <select name="Sexo" id="sexo" style="height:auto;" class="form-select form-select-sm">
+                                                        <option value="Sexo"></option>
+                                                        <option value="Sexo">Masculino</option>
+                                                        <option value="Sexo">Femenino</option>
+                                                    </select>
+                                                  </div>
+                                        
+                                                 
+
+
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Documento</span>
+                                                    <input type="text" aria-label="Documento" required placeholder="Numero de documento" class="form-control" style="height: auto;">
+                                                </div>
+
+
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Correo</span>
+                                                    <input type="text" aria-label="Correo" class="form-control" required placeholder="ejemplo@gmail.com" style="height: auto;">
+                                                </div>
+                                                
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Confirmar correo</span>
+                                                    <input type="text" aria-label="Correo" class="form-control" required placeholder="ejemplo@gmail.com" style="height: auto;">
+                                                </div>
+                                                  
+                                              
+
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Tel.</span>
+                                                    <input type="text" aria-label="Tel" class="form-control" required placeholder="Numero de Telefono" style="height: auto;">
+                                                </div>
+                                                
+                                                
+                                                
+                                                
+                                                <div class="d-grid mb-3 gap-2 d-md-flex justify-content-md-end mx-auto">
+                                                    <button class="btn btn-dark me-md-2" style="background-color: #6B3C54; width: 100px;" type="button">Aceptar</button>
+                                                    <a href=".\index.html"><button class="btn btn-dark" style="background-color: #6B3C54; width: 100px;" type="button">Cancelar</button></a>
+                                                  </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </h2>
+                    </form>
+                    
+
+        </header>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
 <!--  scripts de Bootstrap y jQuery al final del cuerpo del documento -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

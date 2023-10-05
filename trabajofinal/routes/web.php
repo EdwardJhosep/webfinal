@@ -18,3 +18,4 @@ Route::get('/', function () {
     
 });
 Route::get('/inicio', [ContactoController::class, 'showInicio'])->name('inicio');
+
