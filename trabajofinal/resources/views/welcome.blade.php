@@ -20,11 +20,53 @@
     <style>
         /* Establece un ancho y alto fijo para todas las imágenes de combos */
         .card-img-top {
-            width: 100px;
+            width: 340px;
             /* Cambia esto al ancho deseado en píxeles */
-            height: 100px;
+            height: 200px;
             /* Mantén la proporción de aspecto original */
         }
+        /* Estilos para el contenedor de las imágenes en movimiento */
+/* Estilos para el contenedor de las imágenes en movimiento */
+.moving-images {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las imágenes */
+    animation: moveImages 5s linear infinite; /* Animación de movimiento */
+}
+
+/* Estilos para las imágenes */
+.moving-image {
+    width: 500px; /* Ancho fijo para todas las imágenes */
+    height: 600px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajustar la imagen al tamaño del contenedor */
+}
+
+/* Establece un ancho máximo y alto máximo para las imágenes del carrusel */
+.carousel-inner img {
+    max-width: 1930px; /* Establece el ancho máximo deseado */
+    max-height: 780px; /* Establece la altura máxima deseada */
+    width: auto; /* Ajusta automáticamente el ancho en función del alto máximo */
+    height: auto; /* Ajusta automáticamente el alto en función del ancho máximo */
+}
+
+/* Animación de movimiento */
+@keyframes moveImages {
+    0% {
+        transform: translateX(0); /* Inicio */
+    }
+    25% {
+        transform: translateX(20px); /* Movimiento hacia la derecha */
+    }
+    50% {
+        transform: translateX(0); /* Regreso al centro */
+    }
+    75% {
+        transform: translateX(-20px); /* Movimiento hacia la izquierda */
+    }
+    100% {
+        transform: translateX(0); /* Regreso al centro */
+    }
+}
+
 
     </style>
 </head>
@@ -118,7 +160,8 @@
     <br>
     <br>
     <br>
-    
+
+
 </body>
 
 </html>

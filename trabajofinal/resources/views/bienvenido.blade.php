@@ -149,8 +149,8 @@
                                                 
                                                 
                                                 <div class="d-grid mb-3 gap-2 d-md-flex justify-content-md-end mx-auto">
-                                                    <button class="btn btn-dark me-md-2" style="background-color: #6B3C54; width: 100px;" type="button">Aceptar</button>
-                                                    <a href=".\index.html"><button class="btn btn-dark" style="background-color: #6B3C54; width: 100px;" type="button">Cancelar</button></a>
+                                                    <button class="btn btn-dark me-md-2" style="background-color: #6B3C54; width: 100px;" type="button">registrar</button>
+                                                    <a href=".\index.html"><button class="btn btn-dark" style="background-color: #6B3C54; width: 100px;" type="button">login </button></a>
                                                   </div>
 
                                             </form>
