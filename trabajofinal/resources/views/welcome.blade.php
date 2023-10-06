@@ -42,7 +42,7 @@
 
 /* Establece un ancho máximo y alto máximo para las imágenes del carrusel */
 .carousel-inner img {
-    max-width: 1930px; /* Establece el ancho máximo deseado */
+    max-width: 1800px; /* Establece el ancho máximo deseado */
     max-height: 780px; /* Establece la altura máxima deseada */
     width: auto; /* Ajusta automáticamente el ancho en función del alto máximo */
     height: auto; /* Ajusta automáticamente el alto en función del ancho máximo */
@@ -82,23 +82,121 @@
     left: 50%; /* Alinea horizontalmente en el centro del contenedor */
     transform: translate(-50%, -50%); /* Centra el contenido */
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
-    width: 101%; /* Ancho al 100% del contenedor */
+    width: 100%; /* Ancho al 100% del contenedor */
     height: 100%; /* Altura al 100% del contenedor */
     padding: 15%; /* Espacio alrededor del texto */
     color: white; /* Color del texto */
 }
 
 .texto-superpuesto h1 {
-    font-size: 55px; /* Tamaño de fuente */
+    font-size: 55px; /* Tamaño de fuente para h1 */
     color: #fff; /* Color de texto (blanco en este caso) */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.5); /* Sombra de texto roja */
     font-weight: bold; /* Negrita */
     font-family: 'Arial', sans-serif; /* Fuente del texto */
     text-transform: uppercase; /* Convertir texto a mayúsculas */
-    line-height: 300px; /* Centrar verticalmente el texto */
-    text-align: right; /* Alinear el texto a la derecha */
-    margin-right: +370px; /* Desplazar el texto hacia la derecha utilizando margen negativo */
+    text-align: center; /* Alinear el texto al centro horizontalmente */
+    animation: fadeIn 2s ease-in-out; /* Efecto de aparición */
 }
+
+.texto-superpuesto h2 {
+    font-size: 36px; /* Tamaño de fuente para h2 (más pequeño que h1) */
+    color: #fff; /* Color de texto (blanco en este caso) */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); /* Sombra de texto roja */
+    font-weight: bold; /* Negrita */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    text-align: center; /* Alinear el texto al centro horizontalmente */
+    animation: fadeIn 2s ease-in-out; /* Efecto de aparición */
+    margin-top: -100px; /* Ajusta la separación vertical */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .texto-superpuesto h1 {
+        line-height: 1; /* Elimina el espacio adicional en la línea */
+    }
+}
+
+/* Media query para dispositivos de escritorio */
+@media (min-width: 768px) {
+    .texto-superpuesto h1 {
+        /* Estilos específicos para dispositivos de escritorio */
+        line-height: 300px; /* Centrar verticalmente el texto en dispositivos de escritorio */
+        text-align: right; /* Alinear el texto a la derecha en dispositivos de escritorio */
+        margin-right: 370px; /* Desplazar el texto hacia la derecha en dispositivos de escritorio */
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Estilos para el encabezado h1 */
+h1 {
+    font-size: 36px; /* Tamaño de fuente */
+    color: #333; /* Color de texto (puedes cambiar el color a tu gusto) */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Alinear el texto al centro */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para el subtítulo h3 */
+h3 {
+    font-size: 24px; /* Tamaño de fuente */
+    color: #666; /* Color de texto (puedes cambiar el color a tu gusto) */
+    text-align: center; /* Alinear el texto al centro */
+    margin-top: 10px; /* Margen superior */
+}
+<style>
+    .card {
+        position: relative; /* Permite posicionar elementos hijos con respecto a este elemento */
+    }
+
+    .precio-dias {
+        position: absolute; /* Posiciona el elemento de manera absoluta con respecto al contenedor */
+        top: 10px; /* Ajusta la distancia desde la parte superior */
+        right: 10px; /* Ajusta la distancia desde la parte derecha */
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+        color: white; /* Color del texto */
+        padding: 5px 10px; /* Espacio interno para el texto */
+        font-weight: bold; /* Negrita */
+    }
+
+    .precio-dias {
+        position: absolute;
+        top: 10px; /* Ajusta la posición desde la parte superior */
+        right: 10px; /* Ajusta la posición desde la derecha */
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+        color: white; /* Color del texto */
+        padding: 10px; /* Espacio alrededor del texto */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 14px; /* Tamaño de fuente */
+    }
+
+    .precio-dias br {
+        margin-top: 5px; /* Espacio entre líneas */
+    }
+
+    .card {
+        position: relative; /* Establece la posición relativa para que .precio-dias funcione */
+    }
+
+    .card-title {
+        font-weight: bold; /* Texto en negrita */
+        margin-top: 15px; /* Espacio entre el título y el párrafo */
+    }
+
+    .card-text {
+        line-height: 1.5; /* Espaciado entre líneas del párrafo */
+    }
 
 
 
@@ -196,74 +294,63 @@
 <div class="imagen-de-fondo">
     <img src="{{ asset('img/111.jpg') }}" alt="Imagen de fondo">
     <div class="texto-superpuesto">
-        <h1>HUANUCO</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <h1>HUANUCO </h1>
+        <h2>peru-tours</h2>
 
     </div>
 </div>
+<br>
+<br>
 
-    <div class="whatsapp-button">
+<h1>DESCUBRE NUESTROS HERMOSOS LUGARES </h1>
+<H3>elige la mejor promocion para ti</H3>
+
+<!-- Agrega este código debajo del contenido actual en tu archivo HTML -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Primer contenedor -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ asset('img/5.jpg') }}" class="card-img-top" alt="Imagen 1">
+                <div class="precio-dias">Precio: $100<br>Días: 1 <br> Incluye: <br>1.estadia<br>2.comida</div>
+                <div class="card-body">
+                    <h5 class="card-title">La Bella Durmiente</h5>
+                    <p class="card-text">Ubicado el Suroeste de la ciudad de Tingo María, “La Bella Durmiente” es una cadena montañosa cubierta por un manto verde de frondosa vegetación llamada Puma Ringri (orejas de puma) que en conjunto forman la silueta de una hermosa mujer dormida eternamente por cuya base discurren los ríos Huallaga y Monzón.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo contenedor -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ asset('img/6.jpg') }}" class="card-img-top" alt="Imagen 2">
+                <div class="precio-dias">Precio: $250<br>Días: 2 <br> Incluye: <br>1.estadia<br>2.comida</div>
+                <div class="card-body">
+                    <h5 class="card-title">Cordillera Huayhuash</h5>
+                    <p class="card-text">La cordillera Huayhuash, ​ es una cordillera en los Andes del Perú. Corre de norte a sur, la zona principal que posee unas veinte cumbres se desarrolla en una extensión de aproximadamente 30 km, con una cadena montañosa secundaria de cumbres de menor altura hacia el oeste que posee unos 15 km de largo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tercer contenedor -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ asset('img/12.jpg') }}" class="card-img-top" alt="Imagen 3">
+                <div class="precio-dias">Precio: $150<br>Días: 1 <br> Incluye: <br>1.estadia<br>2.comida</div>
+                <div class="card-body">
+                    <h5 class="card-title">Aguas Sulfurosas de Jacintillo</h5>
+                    <p class="card-text">Las aguas sulfurosas de Jacintillo, es una piscina medicinal debajo del cerro llamado Cotomono, el cual posee bastante azufre, de allí el motivo del nombre, esta fuente medicinal cuenta con una dimensión de 30 metros aproximados, tiene una forma semicircular que nace bajo el cerro, Se le atribuyen propiedades curativas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="whatsapp-button">
         <a href="https://wa.me/5121567261" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
         </a>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
 
 </body>
 
