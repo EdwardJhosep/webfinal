@@ -1,157 +1,73 @@
-
-.navbar {
-    background-color: #333; /* Change the background color */
-    padding: 15px 0;
-    border-bottom: 2px solid #ff6600; /* Add a bottom border with an accent color */
+body{
+    background-color: #ffffff;
 }
 
-.navbar-brand .logo {
-    max-width: 100px; /* Adjust the logo's maximum width */
+/**/
+
+.navbar-brand img {
+    max-height: 50px; /* Tamaño máximo del logo */
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-color: #fff; /* Toggle button background color */
+.navbar-link {
+    color: white; /* Color del texto en los enlaces de navegación */
+    text-decoration: none; /* Eliminar subrayado de enlaces */
 }
 
-.nav-item {
-    margin-right: 20px; /* Adjust the spacing between menu items */
+.navbar-link:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
 }
 
-.nav-link {
-    color: #fff; /* Menu item text color */
-    font-weight: bold;
-    transition: color 0.3s;
+/* Estilos para los iconos en la barra de navegación */
+.navbar-icons {
+    display: flex;
+    align-items: center;
 }
 
-.nav-link:hover {
-    color: #ff6600; /* Hover color */
+.navbar-icon {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
 }
 
-/* Floating WhatsApp Button Styles */
+.navbar-icon:hover {
+    color: #007bff; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para el texto en movimiento */
+.moving-text {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para el contenedor de las imágenes en movimiento */
+.moving-images {
+    display: flex;
+    justify-content: space-between;
+    animation: moveImages 5s linear infinite;
+}
+
+/* Estilos para las imágenes en movimiento */
+.moving-image {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Estilos para el botón de WhatsApp */
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9999;
 }
 
 .whatsapp-icon {
-    width: 60px; /* Adjust the icon size */
-    height: auto;
-    border-radius: 50%;
-    background-color: #25d366; /* WhatsApp green */
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s;
+    width: 50px;
+    height: 50px;
 }
 
-.whatsapp-icon:hover {
-    background-color: #128c7e; /* Hover color */
-}
-
-/* Text in Navbar Animation Styles */
-.moving-text {
-    display: flex;
-    align-items: center;
-    color: #fff; /* Text color */
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.moving-text img {
-    max-width: 50px; /* Adjust the image size */
-    margin-right: 10px; /* Spacing between the image and text */
-}
-
-/* Changing Text Animation Styles */
-#changingText {
-    animation: changeText 5s linear infinite; /* Change text every 5 seconds */
-}
-
-@keyframes changeText {
-    0%, 100% { opacity: 0; }
-    10%, 90% { opacity: 1; }
-}
-/* Navbar Styles */
-
-/* Navbar hover effect */
-.nav-item:hover .nav-link {
-    transform: scale(1.1); /* Scale-up effect on hover */
-    transition: transform 0.3s;
-}
-
-/* Navbar active page indicator */
-.nav-item.active-page .nav-link {
-    background-color: #ff6600; /* Background color for the active page */
-    color: #fff; /* Text color for the active page */
-    border-radius: 5px; /* Rounded corners */
-}
-
-/* Floating WhatsApp Button Styles */
-
-/* WhatsApp button hover effect */
-.whatsapp-icon:hover {
-    background-color: #128c7e; /* Hover color */
-    transform: rotate(360deg); /* Rotate effect on hover */
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-/* Text in Navbar Animation Styles */
-
-/* Text animation on hover */
-.moving-text:hover #changingText {
-    animation: none; /* Disable the animation on hover */
-}
-
-/* Changing Text Animation Styles */
-
-/* Text color change animation */
-@keyframes changeText {
-    0%, 100% { opacity: 0; transform: translateY(-10px); }
-    10%, 90% { opacity: 1; transform: translateY(0); }
-}
-
-/* Additional Effects and Styles */
-
-/* Add a subtle box shadow to elements */
-.box-shadow {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Create a hover effect for links */
-a:hover {
-    text-decoration: underline; /* Underline on hover */
-    transition: text-decoration 0.3s;
-}
-
-/* Add a background color transition to buttons */
-.btn {
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #ff6600; /* Background color change on hover */
-    color: #fff; /* Text color change on hover */
-}
-
-/* Add a subtle border-radius to images */
-.img-rounded {
-    border-radius: 5px;
-}
-
-/* Create a pulse animation effect */
-.pulse {
-    animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+/* Agrega !important para forzar la aplicación de un estilo */
+.navbar-light {
+    background-color: #3498db !important;
 }

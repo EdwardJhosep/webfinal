@@ -1,21 +1,14 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactoController;
+// routes/web.php
 
+use App\Http\Controllers\MenuController;
 
-// Ruta para mostrar el formulario de contacto
-Route::get('/contacto', [ContactoController::class, 'showForm'])->name('contacto');
-Route::post('/contacto', [ContactoController::class, 'enviarFormulario']);
+// routes/web.php
 
-// Rutas para las nuevas páginas
-Route::get('/', [ContactoController::class, 'showInicio'])->name('inicio');
-Route::get('/reservar', [ContactoController::class, 'showReservar'])->name('reservar');
-Route::get('/login', [ContactoController::class, 'showLogin'])->name('login');
-
-Route::get('/', function () {
-    return view('welcome'); // Esta es la ruta para la página de bienvenida
-    
-});
-Route::get('/inicio', [ContactoController::class, 'showInicio'])->name('inicio');
+Route::get('/', [MenuController::class, 'inicio']);
+Route::get('/ver', [MenuController::class, 'ver']);
+Route::get('/reservar', [MenuController::class, 'reservar']);
+Route::get('/contacto', [MenuController::class, 'contacto']);
+Route::get('/admin', [MenuController::class, 'admin']);
 

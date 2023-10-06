@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOURIST</title>
-    <link rel="icon" href="https://w7.pngwing.com/pngs/333/737/png-transparent-travel-tourism-in-norway-hotel-business-information-sai-gon-blue-logo-silhouette.png" type="image/png">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/008/942/408/original/ejr-logo-ejr-letter-ejr-letter-logo-design-initials-ejr-logo-linked-with-circle-and-uppercase-monogram-logo-ejr-typography-for-technology-business-and-real-estate-brand-vector.jpg" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Incluye Bootstrap CSS -->
@@ -18,10 +18,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}">
     <style>
-
-        body{
-            background-color: royalblue;
-        }
         /* Establece un ancho y alto fijo para todas las imágenes de combos */
         .card-img-top {
             width: 340px;
@@ -81,7 +77,7 @@
         <div class="container">
             <!-- Logo de la institución -->
             <a class="navbar-brand" href="#">
-                <img src="{{ asset('img/LOGO.jpg') }}" alt="Logo de la Institución" class="logo">
+                <img src="https://www.perutourhuaraz.com/images/logo.png" alt="Logo de la Institución" class="logo">
             </a>
             <!-- Textos en movimiento después del logo -->
             <a class="nav-link moving-text" href="#" id="noticiasDropdown">
@@ -117,26 +113,34 @@
             </script>
 
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ver">Ver</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/reservar">Reservar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('inicio') }}">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('reservar') }}">RESERVAR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contacto') }}">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">LOGIN</a>
-                    </li>
-                </ul>
-            </div>
 
             <!-- Iconos en el lado derecho -->
             <div class="navbar-icons ml-auto">
