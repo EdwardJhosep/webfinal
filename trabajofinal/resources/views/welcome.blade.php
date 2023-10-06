@@ -67,6 +67,40 @@
     }
 }
 
+.imagen-de-fondo {
+    position: relative; /* Establece la posición relativa en el contenedor */
+}
+
+.imagen-de-fondo img {
+    width: 100%; /* Ancho al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 50%; /* Alinea verticalmente en el centro del contenedor */
+    left: 50%; /* Alinea horizontalmente en el centro del contenedor */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    width: 101%; /* Ancho al 100% del contenedor */
+    height: 100%; /* Altura al 100% del contenedor */
+    padding: 15%; /* Espacio alrededor del texto */
+    color: white; /* Color del texto */
+}
+
+.texto-superpuesto h1 {
+    font-size: 55px; /* Tamaño de fuente */
+    color: #fff; /* Color de texto (blanco en este caso) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    font-weight: bold; /* Negrita */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    line-height: 300px; /* Centrar verticalmente el texto */
+    text-align: right; /* Alinear el texto a la derecha */
+    margin-right: +370px; /* Desplazar el texto hacia la derecha utilizando margen negativo */
+}
+
+
 
     </style>
 </head>
@@ -82,12 +116,12 @@
             <!-- Textos en movimiento después del logo -->
             <a class="nav-link moving-text" href="#" id="noticiasDropdown">
                 <img src="img/texto.PNG" alt="">
-                <span id="changingText">Descubre el mundo y vive aventuras</span>
+                <span id="changingText">Descubre el mundo </span>
             </a>
             <script>
                 // Lista de textos para cambiar
                 const textos = [
-                    "Descubre el mundo y vive aventuras",
+                    "Descubre el mundo",
                     "Explora lugares asombrosos",
                     "Viaja con seguridad y comodidad",
                     "Tu próxima aventura te espera"
@@ -139,8 +173,6 @@
             </ul>
         </div>
     </div>
-</nav>
-
 
 
 
@@ -158,6 +190,67 @@
             </div>
         </div>
     </nav>
+
+    <div class="d-block d-md-none"><br><br><br><br><br><br><br></div> <!-- Agrega un espacio en blanco solo en dispositivos móviles -->
+
+<div class="imagen-de-fondo">
+    <img src="{{ asset('img/111.jpg') }}" alt="Imagen de fondo">
+    <div class="texto-superpuesto">
+        <h1>HUANUCO</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
 
     <div class="whatsapp-button">
         <a href="https://wa.me/5121567261" target="_blank">
