@@ -168,6 +168,55 @@
     <br>
     <br>
     <br>
+    <div class="container">
+    <h1>Listado de Reservas</h1>
+    
+    <!-- Formulario de búsqueda -->
+    <form action="{{ route('reservas.search') }}" method="GET">
+        <div class="form-row">
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="nombre" placeholder="Nombre del Cliente">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="telefono" placeholder="Número de Teléfono">
+            </div>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Lista de Reservas -->
+    <table class="table">
+        <!-- Encabezados de la tabla aquí -->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Fecha</th>
+                <!-- Otros encabezados aquí -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de reservas aquí -->
+            @if(isset($reservas))
+                @foreach ($reservas as $reserva)
+                    <tr>
+                        <td>{{ $reserva->nombre }}</td>
+                        <td>{{ $reserva->telefono }}</td>
+                        <td>{{ $reserva->año }} {{ $reserva->mes }}</td>
+                        <!-- Otros datos de reserva aquí -->
+                    </tr>
+                @endforeach
+            @else
+                <tr>
+                    <td colspan="3">No se encontraron reservas.</td>
+                </tr>
+            @endif
+        </tbody>
+    </table>
+</div>
+
 </body>
 
 </html>

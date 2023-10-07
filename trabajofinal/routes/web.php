@@ -11,6 +11,8 @@ Route::get('/reservar', [MenuController::class, 'reservar']);
 Route::get('/contacto', [MenuController::class, 'contacto']);
 Route::get('/admin', [MenuController::class, 'admin']);
 
+Route::get('/reservas/search', [ReservaController::class, 'search'])->name('reservas.search');
+
 
 
 // Ruta para procesar el formulario de reserva y redirigir a 'reservar'
