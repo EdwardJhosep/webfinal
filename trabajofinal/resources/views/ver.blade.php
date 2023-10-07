@@ -125,7 +125,7 @@
                     <a class="nav-link" href="/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ver">Ver</a>
+                    <a class="nav-link" href="/ver">Ver resreva</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/reservar">Reservar</a>
@@ -139,8 +139,6 @@
             </ul>
         </div>
     </div>
-</nav>
-
 
 
 

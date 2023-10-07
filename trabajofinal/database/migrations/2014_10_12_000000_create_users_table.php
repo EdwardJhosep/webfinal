@@ -20,9 +20,11 @@ return new class extends Migration
             $table->integer('año');
             $table->string('mes');
             $table->string('combo');
+            $table->string('imagen')->nullable(); // Columna para la ruta de la imagen, se permite nulo para casos sin imagen
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
@@ -31,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tu_nueva_tabla');
+        Schema::dropIfExists('cliente');
     }
 };

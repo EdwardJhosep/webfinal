@@ -257,7 +257,7 @@ h3 {
                     <a class="nav-link" href="/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ver">Ver</a>
+                    <a class="nav-link" href="/ver">Ver resreva</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/reservar">Reservar</a>
@@ -351,7 +351,5 @@ h3 {
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
         </a>
     </div>
-
 </body>
-
 </html>
