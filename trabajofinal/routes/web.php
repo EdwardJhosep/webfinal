@@ -18,4 +18,3 @@ Route::get('/reservas/search', [ReservaController::class, 'search'])->name('rese
 // Ruta para procesar el formulario de reserva y redirigir a 'reservar'
 Route::post('/reservas', [ReservaController::class, 'store'])->name('reservas.store');
 
-
