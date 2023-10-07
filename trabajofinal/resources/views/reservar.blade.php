@@ -379,7 +379,46 @@
 
         </div>
     </div>
-    
+
+</div>
+ <h1>Formulario de Reserva</h1>
+    <form method="POST" action="{{ route('reservas.store') }}">
+        @csrf
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono">
+        </div>
+        <div>
+            <label for="año">Año:</label>
+            <input type="text" id="año" name="año">
+        </div>
+        <div>
+            <label for="mes">Mes:</label>
+            <input type="text" id="mes" name="mes">
+        </div>
+        <div>
+            <label for="combo">Combo:</label>
+            <input type="text" id="combo" name="combo">
+        </div>
+        <div>
+            <label for="precio">Precio:</label>
+            <input type="number" step="0.01" id="precio" name="precio">
+        </div>
+        <div>
+            <button type="submit">Guardar Reserva</button>
+        </div>
+    </form>
+
+    @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
 </body>
 
 </html>
