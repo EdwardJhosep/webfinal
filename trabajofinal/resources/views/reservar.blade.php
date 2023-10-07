@@ -381,42 +381,95 @@
     </div>
 
 </div>
- <h1>Formulario de Reserva</h1>
+<div class="container">
+    <h1>Formulario de Reserva</h1>
     <form method="POST" action="{{ route('reservas.store') }}">
         @csrf
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+        <div class="form-group">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" class="form-control" required>
+            @if ($errors->has('dni'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('dni') }}
+                </div>
+            @endif
         </div>
-        <div>
+        <div class="form-group">
+            <label for="nombre">NOMBRE:</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required>
+            @if ($errors->has('nombre'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('nombre') }}
+                </div>
+            @endif
+        </div>
+        <div class="form-group">
             <label for="telefono">Teléfono:</label>
-            <input type="text" id="telefono" name="telefono">
+            <input type="text" id="telefono" name="telefono" class="form-control" required>
+            @if ($errors->has('telefono'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('telefono') }}
+                </div>
+            @endif
         </div>
-        <div>
-            <label for="año">Año:</label>
-            <input type="text" id="año" name="año">
+        <div class="form-group">
+            <label for="n_personas">Número de Personas:</label>
+            <input type="text" id="n_personas" name="n_personas" class="form-control" required>
+            @if ($errors->has('n_personas'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('n_personas') }}
+                </div>
+            @endif
         </div>
-        <div>
-            <label for="mes">Mes:</label>
-            <input type="text" id="mes" name="mes">
+        <div class="form-group">
+            <label for="niños">Niños:</label>
+            <input type="text" id="niños" name="niños" class="form-control" required>
+            @if ($errors->has('niños'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('niños') }}
+                </div>
+            @endif
         </div>
-        <div>
+        <div class="form-group">
+            <label for="incluye">Incluye:</label>
+            <input type="text" id="incluye" name="incluye" class="form-control" required>
+            @if ($errors->has('incluye'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('incluye') }}
+                </div>
+            @endif
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" class="form-control" required>
+            @if ($errors->has('fecha'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('fecha') }}
+                </div>
+            @endif
+        </div>
+        <div class="form-group">
             <label for="combo">Combo:</label>
-            <input type="text" id="combo" name="combo">
+            <input type="text" id="combo" name="combo" class="form-control" required>
+            @if ($errors->has('combo'))
+                <div class="invalid-feedback">
+                    {{ $errors->first('combo') }}
+                </div>
+            @endif
         </div>
+       
         <div>
-            <label for="precio">Precio:</label>
-            <input type="number" step="0.01" id="precio" name="precio">
-        </div>
-        <div>
-            <button type="submit">Guardar Reserva</button>
+            <button type="submit" class="btn btn-primary">Guardar Reserva</button>
         </div>
     </form>
+</div>
 
-    @if(session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
+
+
+@if(session('success'))
+<div class="alert alert-success">
+    {{ session('success') }}
+</div>
 @endif
 
 </body>

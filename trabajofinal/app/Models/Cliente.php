@@ -9,11 +9,17 @@ class Cliente extends Model
     protected $table = 'cliente';
 
     protected $fillable = [
+        'dni',
         'nombre',
         'telefono',
-        'año',
-        'mes',
+        'n_personas', // Nuevo campo
+        'niños',      // Nuevo campo
+        'incluye',    // Nuevo campo
+        'fecha',
         'combo',
         'precio',
+        'ticket',
+        'imagen',
     ];
+    
 }

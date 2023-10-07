@@ -15,16 +15,21 @@ return new class extends Migration
     {
         Schema::create('cliente', function (Blueprint $table) {
             $table->id();
+            $table->string('dni'); // Agregar columna de DNI antes que el nombre
             $table->string('nombre');
             $table->string('telefono');
-            $table->integer('año');
-            $table->string('mes');
+            $table->string('n_personas');
+            $table->string('niños');
+            $table->string('incluye');
+            $table->date('fecha');
             $table->string('combo');
-            $table->string('imagen')->nullable(); // Columna para la ruta de la imagen, se permite nulo para casos sin imagen
+            $table->string('ticket');
+            $table->string('imagen')->nullable();
             $table->decimal('precio', 10, 2)->default(0.00);
             $table->timestamps();
         });
     }
+    
     
 
     /**

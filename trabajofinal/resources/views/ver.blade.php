@@ -169,18 +169,15 @@
     <br>
     <br>
     <div class="container">
-    <h1>Listado de Reservas</h1>
-    
+    <h1>Listado de tus Reservas</h1>
+
     <!-- Formulario de búsqueda -->
     <form action="{{ route('reservas.search') }}" method="GET">
         <div class="form-row">
-            <div class="col-md-4">
-                <input type="text" class="form-control" name="nombre" placeholder="Nombre del Cliente">
+            <div class="col-md-3">
+                <input type="text" class="form-control" name="dni" placeholder="DNI del Cliente">
             </div>
-            <div class="col-md-4">
-                <input type="text" class="form-control" name="telefono" placeholder="Número de Teléfono">
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <button type="submit" class="btn btn-primary">Buscar</button>
             </div>
         </div>
@@ -192,8 +189,15 @@
         <thead>
             <tr>
                 <th>Nombre</th>
+                <th>DNI</th>
                 <th>Teléfono</th>
                 <th>Fecha</th>
+                <th>Combo</th>
+                <th>Ticket</th> <!-- Agregamos el encabezado para el ticket -->
+                <th>Personas</th> <!-- Agregamos el encabezado para n_personas -->
+                <th>Niños</th> <!-- Agregamos el encabezado para niños -->
+                <th>Incluye</th> <!-- Agregamos el encabezado para incluye -->
+                <th>Precio</th>
                 <!-- Otros encabezados aquí -->
             </tr>
         </thead>
@@ -203,19 +207,27 @@
                 @foreach ($reservas as $reserva)
                     <tr>
                         <td>{{ $reserva->nombre }}</td>
+                        <td>{{ $reserva->dni }}</td>
                         <td>{{ $reserva->telefono }}</td>
-                        <td>{{ $reserva->año }} {{ $reserva->mes }}</td>
+                        <td>{{ $reserva->fecha }}</td>
+                        <td>{{ $reserva->combo }}</td>
+                        <td>{{ $reserva->ticket }}</td> <!-- Mostramos el número de ticket -->
+                        <td>{{ $reserva->n_personas }}</td> <!-- Mostramos el número de personas -->
+                        <td>{{ $reserva->niños }}</td> <!-- Mostramos si hay niños -->
+                        <td>{{ $reserva->incluye }}</td> <!-- Mostramos lo que incluye -->
+                        <td>{{ $reserva->precio }}</td>
                         <!-- Otros datos de reserva aquí -->
                     </tr>
                 @endforeach
             @else
                 <tr>
-                    <td colspan="3">No se encontraron reservas.</td>
+                    <td colspan="10">No se encontraron reservas.</td>
                 </tr>
             @endif
         </tbody>
     </table>
 </div>
+
 
 </body>
 
