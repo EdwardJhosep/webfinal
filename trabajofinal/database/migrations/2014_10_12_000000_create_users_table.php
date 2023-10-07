@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('mes');
             $table->string('combo');
             $table->string('imagen')->nullable(); // Columna para la ruta de la imagen, se permite nulo para casos sin imagen
+            $table->decimal('precio', 10, 2)->default(0.00);
             $table->timestamps();
         });
     }
