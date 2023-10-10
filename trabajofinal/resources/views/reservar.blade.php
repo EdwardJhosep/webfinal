@@ -168,219 +168,31 @@
     <br>
     <br>
     <br>
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Primer cuadro -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen1.jpg" class="card-img-top" alt="Imagen 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 1</h5>
-                        <p class="card-text">Descripción del primer elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
+   <!-- Dentro del cuerpo de tu vista reservar.blade.php -->
+
+<h1>Combos Disponibles</h1>
+
+<div class="row">
+    @foreach($combos as $combo)
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ asset('storage/imagenes_combo/' . basename($combo->imagen)) }}" class="card-img-top" alt="{{ $combo->titulo }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $combo->titulo }}</h5>
+                    <p class="card-text">{{ $combo->descripcion }}</p>
+                    <div class="precio-dias">
+                        Precio: ${{ $combo->precio }}<br>
+                        Días: {{ $combo->dias }}<br>
+                        Incluye: <br>
+                        {{ $combo->incluye }}
                     </div>
                 </div>
             </div>
-
-          
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-         
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen3.jpg" class="card-img-top" alt="Imagen 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 3</h5>
-                        <p class="card-text">Descripción del tercer elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 4</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 5</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 6</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 7</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 8</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 9</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 10</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 11</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 12</h5>
-                        <p class="card-text">Descripción del segundo elemento.</p>
-                        <div class="precio-dias">
-                            Precio: $150<br>
-                            Días: 1 <br>
-                            Incluye: <br>
-                            1. Estadía<br>
-                            2. Comida
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-
+    @endforeach
 </div>
+
+
 <div class="container">
     <h1>Formulario de Reserva</h1>
     <form method="POST" action="{{ route('reservas.store') }}">

@@ -34,3 +34,7 @@ Route::post('/logout', function (Request $request) {
     Auth::logout();
     return redirect('/admin'); // Redirige a la página admin.blade.php
 })->name('logout');
+
+
+
+Route::get('/reservar', [ComboController::class, 'obtenerCombos'])->name('reservar.combos');
