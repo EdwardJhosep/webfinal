@@ -2,14 +2,20 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Combo extends Model
 {
-    protected $fillable = ['titulo', 'descripcion', 'precio', 'dias', 'incluye', 'imagen', 'admin_id'];
+    use HasFactory;
+    protected $table = 'combo';
 
-    public function admin()
-    {
-        return $this->belongsTo(Admin::class);
-    }
+    protected $fillable = [
+        'titulo',
+        'descripcion',
+        'precio',
+        'dias',
+        'incluye',
+        'imagen',
+    ];
 }

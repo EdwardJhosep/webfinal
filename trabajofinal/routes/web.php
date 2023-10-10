@@ -20,3 +20,17 @@ Route::post('/reservas', [ReservaController::class, 'store'])->name('reservas.st
 // Rutas para el controlador AdminController
 Route::get('/admin', [AdminController::class, 'showLoginForm'])->name('admin'); // Muestra el formulario de inicio de sesión
 Route::post('/agregar', [AdminController::class, 'agregar'])->name('agregar'); // Procesa el inicio de sesión
+
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComboController;
+
+// Ruta para mostrar el formulario de agregar combos
+Route::get('/agregar-combo', [ComboController::class, 'mostrarFormulario'])->name('agregar.combo.form');
+Route::post('/agregar-combo', [ComboController::class, 'agregarCombo'])->name('agregar.combo');
+
+// Ruta para cerrar sesión y redirigir a admin.blade.php
+Route::post('/logout', function (Request $request) {
+    Auth::logout();
+    return redirect('/admin'); // Redirige a la página admin.blade.php
+})->name('logout');
