@@ -35,7 +35,7 @@ Route::post('/logout', function (Request $request) {
     return redirect('/admin'); // Redirige a la página admin.blade.php
 })->name('logout');
 
-Route::get('/listar-combos', [ComboController::class, 'listarCombos'])->name('listar.combos');
+
 Route::get('/editar-combo/{id}', [ComboController::class, 'editarCombo'])->name('editar.combo');
 Route::post('/eliminar-combo/{id}', [ComboController::class, 'eliminarCombo'])->name('eliminar.combo');
 
@@ -51,3 +51,16 @@ Route::post('/admin', [AdminController::class, 'login'])->name('admin.login');
 
 // Ruta para mostrar la vista 'agregar.blade.php' después del inicio de sesión exitoso
 Route::get('/agregar', [AdminController::class, 'agregar'])->name('agregar');
+
+
+
+// Ruta para mostrar el formulario de agregar combos y listar los combos
+Route::get('/agregar', [ComboController::class, 'listarCombos'])->name('agregar.combo.form');
+
+
+
+
+Route::get('/agregar-combo', [ComboController::class, 'mostrarFormulario'])->name('agregar.combo.form');
+Route::post('/agregar-combo', [ComboController::class, 'agregarCombo'])->name('agregar.combo');
+Route::get('/editar-combo/{id}', [ComboController::class, 'editarCombo'])->name('editar.combo');
+Route::get('/eliminar-combo/{id}', [ComboController::class, 'eliminarCombo'])->name('eliminar.combo');

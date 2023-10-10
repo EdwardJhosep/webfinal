@@ -37,5 +37,49 @@
     <button type="submit">Cerrar Sesión</button>
 </form>
 
+
+
+
+<h1>Listado de Combos</h1>
+
+<!-- Tabla para mostrar los combos -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Días</th> <!-- Agregamos la columna Días -->
+            <th>Incluye</th> <!-- Agregamos la columna Incluye -->
+            <th>Imagen</th> <!-- Agregamos la columna Imagen -->
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Itera a través de los combos obtenidos desde el controlador -->
+        @foreach($combos as $combo)
+        <tr>
+            <td>{{ $combo->titulo }}</td>
+            <td>{{ $combo->descripcion }}</td>
+            <td>{{ $combo->precio }}</td>
+            <td>{{ $combo->dias }}</td> <!-- Mostramos los días -->
+            <td>{{ $combo->incluye }}</td> <!-- Mostramos lo que incluye -->
+            <td>
+                @if($combo->imagen)
+                <img src="{{ asset('storage/imagenes_combo/' . basename($combo->imagen)) }}" class="card-img-top" alt="{{ $combo->titulo }}">
+                @else
+                    No hay imagen
+                @endif
+            </td> <!-- Mostramos la imagen o un mensaje si no hay imagen -->
+            <td>
+                <a href="{{ route('editar.combo', ['id' => $combo->id]) }}">Editar</a> |
+                <a href="{{ route('eliminar.combo', ['id' => $combo->id]) }}">Eliminar</a>
+            </td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
+
+</table>
 </body>
 </html>
