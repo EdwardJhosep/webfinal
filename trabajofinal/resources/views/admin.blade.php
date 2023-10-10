@@ -168,9 +168,11 @@
     <br>
     <br>
     <br>
+
+    
     <h1>Iniciar Sesión como Administrador</h1>
     
-    <form method="POST" action="{{ route('agregar') }}">
+    <form method="POST" action="{{ route('admin.login') }}">
         @csrf
 
         <label for="email">Email:</label>

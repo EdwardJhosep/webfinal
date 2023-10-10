@@ -40,6 +40,7 @@ class ComboController extends Controller
     
         // Puedes redirigir a donde desees después de guardar
         return redirect()->route('agregar.combo.form')->with('success', 'Combo agregado con éxito');
+      
     }
     public function obtenerCombos()
     {
@@ -47,5 +48,4 @@ class ComboController extends Controller
 
         return view('reservar', compact('combos')); // Pasar los combos a la vista
     }
-    
 }    

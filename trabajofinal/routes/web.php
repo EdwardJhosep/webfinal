@@ -35,6 +35,19 @@ Route::post('/logout', function (Request $request) {
     return redirect('/admin'); // Redirige a la página admin.blade.php
 })->name('logout');
 
-
+Route::get('/listar-combos', [ComboController::class, 'listarCombos'])->name('listar.combos');
+Route::get('/editar-combo/{id}', [ComboController::class, 'editarCombo'])->name('editar.combo');
+Route::post('/eliminar-combo/{id}', [ComboController::class, 'eliminarCombo'])->name('eliminar.combo');
 
 Route::get('/reservar', [ComboController::class, 'obtenerCombos'])->name('reservar.combos');
+
+
+
+// Ruta para mostrar el formulario de inicio de sesión
+Route::get('/admin', [AdminController::class, 'showLoginForm'])->name('admin.login.form');
+
+// Ruta para procesar el inicio de sesión
+Route::post('/admin', [AdminController::class, 'login'])->name('admin.login');
+
+// Ruta para mostrar la vista 'agregar.blade.php' después del inicio de sesión exitoso
+Route::get('/agregar', [AdminController::class, 'agregar'])->name('agregar');
