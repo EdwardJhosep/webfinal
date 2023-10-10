@@ -92,6 +92,40 @@
         #toggle-map-button:hover {
             background-color: #0056b3;
         }
+        .contact-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
 
     </style>
 </head>
@@ -194,6 +228,22 @@
     <br>
     <br>
     <br>
+    <div class="contact-info">
+    <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <p>Correo Electrónico: <a href="mailto:info@example.com">info@example.com</a></p>
+    </div>
+    <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <p>Número de Teléfono: <a href="tel:+123456789">+123456789</a></p>
+    </div>
+    <div class="contact-item">
+        <i class="fas fa-map-marker"></i>
+        <p>Dirección: 123 Calle Principal, Ciudad, País</p>
+    </div>
+</div>
+
+<br>
     <div id="map-container">
         <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.104039423829!2d-76.24071232484117!3d-9.92529280603711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c31cfd9a54f7%3A0x6ebf80d4c3d959b3!2sParque%20AMARILIS!5e0!3m2!1ses-419!2spe!4v1696942917345!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>

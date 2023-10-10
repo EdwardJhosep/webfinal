@@ -6,16 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Admin extends Model
 {
-    protected $table = 'admins';
+    protected $fillable = ['nombre', 'email', 'password'];
 
-    protected $fillable = [
-        'nombre',
-        'contrasena',
-        'combo_id', // Agrega la columna combo_id a los campos rellenables
-    ];
-
-    public function combo()
+    public function combos()
     {
-        return $this->belongsTo(Combo::class);
+        return $this->hasMany(Combo::class);
     }
 }
