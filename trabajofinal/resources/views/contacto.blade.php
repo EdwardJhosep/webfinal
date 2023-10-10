@@ -67,6 +67,31 @@
     }
 }
 
+        /* Estilos para el contenedor del mapa */
+        #map-container {
+            width: 100%;
+            max-width: 800px; /* Ancho máximo para mantenerlo responsivo */
+            height: 600px;
+            margin: 0 auto; /* Centra el mapa horizontalmente */
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        /* Estilos para el botón de abrir y cerrar el mapa */
+        #toggle-map-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #toggle-map-button:hover {
+            background-color: #0056b3;
+        }
 
     </style>
 </head>
@@ -168,8 +193,12 @@
     <br>
     <br>
     <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1965.0585912848032!2d-76.23961067537671!3d-9.924197725372885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1696942370426!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    <div id="map-container">
+        <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.104039423829!2d-76.24071232484117!3d-9.92529280603711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c31cfd9a54f7%3A0x6ebf80d4c3d959b3!2sParque%20AMARILIS!5e0!3m2!1ses-419!2spe!4v1696942917345!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
+   
 </body>
 
 </html>
