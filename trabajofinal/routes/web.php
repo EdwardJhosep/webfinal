@@ -64,3 +64,5 @@ Route::get('/agregar-combo', [ComboController::class, 'mostrarFormulario'])->nam
 Route::post('/agregar-combo', [ComboController::class, 'agregarCombo'])->name('agregar.combo');
 Route::get('/editar-combo/{id}', [ComboController::class, 'editarCombo'])->name('editar.combo');
 Route::get('/eliminar-combo/{id}', [ComboController::class, 'eliminarCombo'])->name('eliminar.combo');
+
+Route::post('/actualizar-combo/{id}', [ComboController::class, 'actualizarCombo'])->name('actualizar.combo');
