@@ -197,7 +197,6 @@
                 <th>Personas</th> <!-- Agregamos el encabezado para n_personas -->
                 <th>Niños</th> <!-- Agregamos el encabezado para niños -->
                 <th>Incluye</th> <!-- Agregamos el encabezado para incluye -->
-                <th>Precio</th>
                 <!-- Otros encabezados aquí -->
             </tr>
         </thead>
@@ -215,7 +214,6 @@
                         <td>{{ $reserva->n_personas }}</td> <!-- Mostramos el número de personas -->
                         <td>{{ $reserva->niños }}</td> <!-- Mostramos si hay niños -->
                         <td>{{ $reserva->incluye }}</td> <!-- Mostramos lo que incluye -->
-                        <td>{{ $reserva->precio }}</td>
                         <!-- Otros datos de reserva aquí -->
                     </tr>
                 @endforeach

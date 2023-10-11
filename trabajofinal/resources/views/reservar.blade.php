@@ -170,13 +170,13 @@
     <br>
    <!-- Dentro del cuerpo de tu vista reservar.blade.php -->
 
-<h1>Combos Disponibles</h1>
+   <h1>Combos Disponibles</h1>
 
 <div class="row">
     @foreach($combos as $combo)
         <div class="col-md-4 mb-4">
             <div class="card">
-                <img src="{{ asset('storage/imagenes_combo/' . basename($combo->imagen)) }}" class="card-img-top" alt="{{ $combo->titulo }}">
+                <img src="{{ asset('storage/imagenes_combo/' . basename($combo->imagen)) }}" alt="{{ $combo->titulo }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ $combo->titulo }}</h5>
                     <p class="card-text">{{ $combo->descripcion }}</p>
@@ -191,6 +191,7 @@
         </div>
     @endforeach
 </div>
+
 
 
 <div class="container">
