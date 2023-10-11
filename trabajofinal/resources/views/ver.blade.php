@@ -48,6 +48,64 @@
     height: auto; /* Ajusta automáticamente el alto en función del ancho máximo */
 }
 
+.container1 {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
 /* Animación de movimiento */
 @keyframes moveImages {
     0% {
@@ -162,13 +220,17 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
         </a>
     </div>
-
     <br>
     <br>
     <br>
     <br>
     <br>
-    <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container1">
     <h1>Listado de tus Reservas</h1>
 
     <!-- Formulario de búsqueda -->

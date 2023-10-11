@@ -15,60 +15,134 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}">
     <style>
-        /* Establece un ancho y alto fijo para todas las imágenes de combos */
-        .card-img-top {
-            width: 340px;
-            /* Cambia esto al ancho deseado en píxeles */
-            height: 200px;
-            /* Mantén la proporción de aspecto original */
-        }
-        /* Estilos para el contenedor de las imágenes en movimiento */
-/* Estilos para el contenedor de las imágenes en movimiento */
-.moving-images {
+/* Estilos para el contenedor de la fila */
+.row {
     display: flex;
-    justify-content: space-between; /* Espacio entre las imágenes */
-    animation: moveImages 5s linear infinite; /* Animación de movimiento */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* Estilos para las imágenes */
-.moving-image {
-    width: 500px; /* Ancho fijo para todas las imágenes */
-    height: 600px; /* Altura fija para todas las imágenes */
-    object-fit: cover; /* Ajustar la imagen al tamaño del contenedor */
+/* Estilos para cada tarjeta (col-md-4) */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px;
+    width: 60%; /* Reducir el ancho para hacer las tarjetas más pequeñas */
+    background-color: #f8f8f8;
+    position: relative;
 }
 
-/* Establece un ancho máximo y alto máximo para las imágenes del carrusel */
-.carousel-inner img {
-    max-width: 1930px; /* Establece el ancho máximo deseado */
-    max-height: 780px; /* Establece la altura máxima deseada */
-    width: auto; /* Ajusta automáticamente el ancho en función del alto máximo */
-    height: auto; /* Ajusta automáticamente el alto en función del ancho máximo */
+/* Estilos para la imagen dentro de la tarjeta */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-/* Animación de movimiento */
-@keyframes moveImages {
-    0% {
-        transform: translateX(0); /* Inicio */
-    }
-    25% {
-        transform: translateX(20px); /* Movimiento hacia la derecha */
-    }
-    50% {
-        transform: translateX(0); /* Regreso al centro */
-    }
-    75% {
-        transform: translateX(-20px); /* Movimiento hacia la izquierda */
-    }
-    100% {
-        transform: translateX(0); /* Regreso al centro */
-    }
+/* Estilos para el cuerpo de la tarjeta (card-body) */
+.card-body {
+    padding: 33px;
+    text-align: left;
+}
+
+/* Estilos para el título */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* Estilos para el texto descriptivo */
+.card-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #777;
+}
+
+/* Estilos para la sección de precio y días */
+.precio-dias {
+    font-size: 16px;
+    color: #ff6600;
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical del precio */
+    left: 10px; /* Ajusta la posición horizontal del precio */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para el precio */
+    padding: 5px 10px; /* Espaciado interno para el precio */
+    color: #ff0000; /* Cambia el color del precio a rojo */
+}
+
+/* Estilos para el contenedor principal */
+.container1 {
+    max-width: 500px; /* Establece el ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para etiquetas de formulario y campos de entrada */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para mensajes de error */
+.invalid-feedback {
+    color: #ff0000;
+}
+
+/* Estilos para el botón de envío */
+button.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el mensaje de éxito */
+.alert.alert-success {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
 }
 
 
-    </style>
+</style>
+
+
 </head>
 
 <body>
@@ -162,7 +236,11 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
         </a>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -194,7 +272,7 @@
 
 
 
-<div class="container">
+<div class="container1">
     <h1>Formulario de Reserva</h1>
     <form method="POST" action="{{ route('reservas.store') }}">
         @csrf

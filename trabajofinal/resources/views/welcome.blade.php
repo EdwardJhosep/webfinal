@@ -311,7 +311,8 @@ h3 {
         <!-- Primer contenedor -->
         <div class="col-md-4 mb-4">
             <div class="card">
-                <img src="{{ asset('img/5.jpg') }}" class="card-img-top" alt="Imagen 1">
+            <img src="https://elcomercio.pe/resizer/5OucjvtgYInW33X2CzeErM6GZ7o=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/3HBJO5WSORE4VMR3YTY6MPQTJY.jpg" class="card-img-top" alt="Imagen 1">
+
                 <div class="precio-dias">Precio: $100<br>Días: 1 <br> Incluye: <br>1.estadia<br>2.comida</div>
                 <div class="card-body">
                     <h5 class="card-title">La Bella Durmiente</h5>
@@ -323,7 +324,8 @@ h3 {
         <!-- Segundo contenedor -->
         <div class="col-md-4 mb-4">
             <div class="card">
-                <img src="{{ asset('img/6.jpg') }}" class="card-img-top" alt="Imagen 2">
+            <img src="https://www.peru.travel/Contenido/Atractivo/Imagen/es/23/1.2/Principal/cordillera-huayhuash.jpg" class="card-img-top" alt="Imagen 1">
+
                 <div class="precio-dias">Precio: $250<br>Días: 2 <br> Incluye: <br>1.estadia<br>2.comida</div>
                 <div class="card-body">
                     <h5 class="card-title">Cordillera Huayhuash</h5>
@@ -335,7 +337,8 @@ h3 {
         <!-- Tercer contenedor -->
         <div class="col-md-4 mb-4">
             <div class="card">
-                <img src="{{ asset('img/12.jpg') }}" class="card-img-top" alt="Imagen 3">
+            <img src="https://www.bitacorarevista.com/web/wp-content/uploads/AGUAS-SULFOROSAS-2.jpg" class="card-img-top" alt="Imagen 1">
+
                 <div class="precio-dias">Precio: $150<br>Días: 1 <br> Incluye: <br>1.estadia<br>2.comida</div>
                 <div class="card-body">
                     <h5 class="card-title">Aguas Sulfurosas de Jacintillo</h5>

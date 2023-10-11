@@ -53,19 +53,6 @@ class ComboController extends Controller
         $combos = Combo::all();
         return view('agregar', compact('combos'));
     }
-    public function editarCombo($id)
-    {
-        // Obtener el combo que se va a editar por su ID
-        $combo = Combo::find($id);
-
-        // Verificar si el combo existe
-        if (!$combo) {
-            return redirect()->route('agregar.combo.form')->with('error', 'Combo no encontrado');
-        }
-
-        // Cargar el formulario de edición del combo
-        return view('editar_combo', compact('combo'));
-    }
 
     public function eliminarCombo($id)
     {

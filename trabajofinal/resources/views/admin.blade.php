@@ -48,6 +48,49 @@
     height: auto; /* Ajusta automáticamente el alto en función del ancho máximo */
 }
 
+h1 {
+    font-size: 24px;
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px;
+}
+
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 /* Animación de movimiento */
 @keyframes moveImages {
     0% {
@@ -163,6 +206,11 @@
         </a>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
